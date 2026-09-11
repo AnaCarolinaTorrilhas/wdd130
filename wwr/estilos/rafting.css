@@ -33,8 +33,9 @@ header {
   background: var(--cor-primaria);
   border-bottom: 4px solid var(--cor-destaque2);
   color: white;
-  display: flex;
+  display: grid;
   gap: 2rem;
+  grid-template-columns: 120px 1fr;
   justify-content: space-between;
   padding: 1rem 1.5rem;
 }
@@ -46,9 +47,11 @@ header {
 }
 
 nav ul {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
+  justify-content: flex-end;
   list-style: none;
 }
 
@@ -145,6 +148,34 @@ nav {
   background: var(--cor-destaque2);
   padding: 1.5rem;
   text-align: center;
+}
+
+.aventura-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 1.5rem;
+}
+
+.aventura figure {
+  margin: 0;
+  padding: 0;
+}
+
+.aventura figure img {
+  aspect-ratio: 1;
+  border: 3px solid white;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.aventura figcaption {
+  color: var(--cor-primaria);
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-top: 0.5rem;
 }
 
 footer {
@@ -501,6 +532,10 @@ textarea {
     justify-content: center;
   }
 
+  header {
+    grid-template-columns: 1fr;
+  }
+
   .hero article {
     position: static;
   }
@@ -516,8 +551,13 @@ textarea {
 
   .mini-grid,
   .tour-grid,
-  .team-grid {
+  .team-grid,
+  .aventura-grid {
     grid-template-columns: 1fr;
+  }
+
+  .aventura-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   footer {
