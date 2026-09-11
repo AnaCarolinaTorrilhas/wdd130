@@ -23,7 +23,8 @@
 
     <main>
       <section class="home-hero">
-        <div>
+        <img class="home-hero-image" src="imagens/hero-rafting.svg" alt="Bote de rafting descendo um rio entre montanhas">
+        <div class="home-hero-content">
           <p class="eyebrow">Coragem para sair da margem</p>
           <h1>A aventura começa onde o rio chama.</h1>
           <p>Descubra corredeiras, paisagens e momentos que ficam para sempre. Na Rio Vivo, cada descida combina emoção, cuidado e um time que conhece o caminho.</p>
@@ -60,6 +61,12 @@
         <h2>Pronto para molhar os pés?</h2>
         <p>Conte para a gente o que você está imaginando e montamos a melhor experiência para o seu grupo.</p>
         <a class="button button-dark" href="contato.html">Fale com a equipe</a>
+        <form class="newsletter-form" action="https://formspree.io/f/mayzqvqa" method="post">
+          <h3>Receba novidades do rio</h3>
+          <label for="newsletter-nome">Seu nome<input id="newsletter-nome" name="nome" type="text" autocomplete="name" required></label>
+          <label for="newsletter-email">Seu e-mail<input id="newsletter-email" name="email" type="email" autocomplete="email" required></label>
+          <button class="button" type="submit">Quero receber</button>
+        </form>
       </section>
     </main>
 

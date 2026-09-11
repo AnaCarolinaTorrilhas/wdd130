@@ -191,15 +191,29 @@ footer p {
 
 .home-hero {
   align-items: end;
-  background: linear-gradient(100deg, rgb(7 59 76 / 0.96), rgb(7 59 76 / 0.35)), url("../imagens/hero-rafting.svg") center / cover;
+  background: var(--primaria);
   color: var(--branco);
   display: flex;
   min-height: 430px;
+  overflow: hidden;
   padding: clamp(1.5rem, 5vw, 4rem);
+  position: relative;
 }
 
-.home-hero > div {
+.home-hero-image {
+  display: block;
+  height: 430px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.home-hero-content {
+  background: rgb(7 59 76 / 0.88);
+  bottom: 0;
+  left: 0;
   max-width: 39rem;
+  padding: 2rem;
+  position: absolute;
 }
 
 .home-hero h1 {
@@ -334,6 +348,26 @@ footer p {
   margin: 0 auto 1rem;
 }
 
+.newsletter-form {
+  background: var(--branco);
+  color: var(--primaria);
+  display: grid;
+  gap: 0.75rem;
+  margin: 2rem auto 0;
+  max-width: 34rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.newsletter-form h3 {
+  color: var(--primaria);
+  font-family: var(--titulo);
+}
+
+.newsletter-form label {
+  margin-bottom: 0;
+}
+
 .page-intro {
   background: var(--amarelo);
   margin: 0 0 2rem;
@@ -353,6 +387,13 @@ footer p {
 .tour-card {
   display: flex;
   flex-direction: column;
+}
+
+.tour-card > img {
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }
 
 .tour-top {
@@ -395,6 +436,35 @@ footer p {
 
 .safety-strip p {
   margin: 0 auto;
+}
+
+.schedule-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+table {
+  background: var(--branco);
+  border-collapse: collapse;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+caption {
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+th,
+td {
+  border: 1px solid var(--linha);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+thead {
+  background: var(--primaria);
+  color: var(--branco);
 }
 
 .contact-layout {
@@ -523,6 +593,20 @@ fieldset input,
 
   .hero article,
   .hero h1 {
+    position: static;
+  }
+
+  .home-hero {
+    padding: 0;
+  }
+
+  .home-hero-image {
+    height: 270px;
+  }
+
+  .home-hero-content {
+    max-width: none;
+    padding: 1rem;
     position: static;
   }
 
