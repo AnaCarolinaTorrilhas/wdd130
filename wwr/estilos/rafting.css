@@ -440,6 +440,13 @@ footer p {
   text-align: left;
 }
 
+.contact-info iframe {
+  border: 0;
+  height: 220px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
 dl div {
   border-top: 1px solid var(--linha);
   padding: 0.9rem 0;
@@ -483,6 +490,67 @@ textarea {
   resize: vertical;
 }
 
+fieldset {
+  border: 0;
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+fieldset label,
+.checkbox-label {
+  align-items: center;
+  display: flex;
+  font-weight: normal;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+fieldset input,
+.checkbox-label input {
+  accent-color: var(--destaque);
+  margin: 0;
+  width: auto;
+}
+
+.staff-section {
+  background: var(--branco);
+  margin: 2rem 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.staff-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.5rem;
+}
+
+.staff-grid figure {
+  margin: 0;
+}
+
+.staff-grid img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 0.75rem;
+  width: 120px;
+}
+
+.staff-grid figcaption {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.staff-grid figcaption span {
+  color: var(--destaque);
+  font-size: 0.85rem;
+}
+
 @media (max-width: 650px) {
   header,
   footer {
@@ -517,6 +585,10 @@ textarea {
 
   .aventura-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .staff-grid {
+    grid-template-columns: 1fr;
   }
 
   footer {

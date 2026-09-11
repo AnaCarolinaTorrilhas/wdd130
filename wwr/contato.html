@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco | Rio Vivo Rafting</title>
-    <meta name="description" content="Entre em contato com a Rio Vivo Rafting para tirar dúvidas e planejar sua próxima aventura no rio.">
+    <meta name="description" content="Entre em contato com a Rio Vivo Rafting para tirar dúvidas, planejar seu passeio e falar com nossa equipe.">
     <meta name="author" content="Ana Carolina da Silva Torrilhas">
     <link rel="stylesheet" href="estilos/rafting.css">
   </head>
@@ -17,10 +17,48 @@
     </header>
 
     <main>
-      <section class="page-intro"><p class="eyebrow">Vamos conversar</p><h1>Seu próximo rio começa aqui.</h1><p>Tem uma dúvida, uma data em mente ou um grupo pronto para a aventura? Envie uma mensagem e nossa equipe responde com todos os detalhes.</p></section>
+      <section class="page-intro">
+        <p class="eyebrow">Vamos conversar</p>
+        <h1>Seu próximo rio começa aqui.</h1>
+        <p>Tem uma dúvida, uma data em mente ou um grupo pronto para a aventura? Envie uma mensagem e nossa equipe responde com todos os detalhes.</p>
+      </section>
+
       <section class="contact-layout">
-        <div class="contact-info"><h2>Fale com a equipe</h2><p>Atendemos de segunda a sábado, das 8h às 18h.</p><dl><div><dt>Telefone</dt><dd>(65) 3333-2026</dd></div><div><dt>E-mail</dt><dd>ola@riovivorafting.com</dd></div><div><dt>Base Rio Vivo</dt><dd>Estrada das Águas, km 12<br>Cuiabá - MT</dd></div></dl></div>
-        <form action="https://formspree.io/f/mayzqvqa" method="post"><label for="nome">Seu nome<input id="nome" name="nome" type="text" autocomplete="name" required></label><label for="email">Seu e-mail<input id="email" name="email" type="email" autocomplete="email" required></label><label for="passeio">Passeio de interesse<select id="passeio" name="passeio"><option value="">Selecione uma opção</option><option>Primeira Onda</option><option>Correnteza Viva</option><option>Expedição Bruta</option></select></label><label for="mensagem">Mensagem<textarea id="mensagem" name="mensagem" rows="5" required></textarea></label><button class="button button-dark" type="submit">Enviar mensagem</button></form>
+        <div class="contact-info">
+          <h2>Fale com a equipe</h2>
+          <p>Atendemos de segunda a sábado, das 8h às 18h.</p>
+          <dl>
+            <div><dt>Endereço</dt><dd>Estrada das Águas, km 12<br>Cuiabá - MT, 78000-000</dd></div>
+            <div><dt>Telefone</dt><dd>(65) 3333-2026</dd></div>
+            <div><dt>E-mail</dt><dd>ola@riovivorafting.com</dd></div>
+          </dl>
+          <iframe title="Mapa da base Rio Vivo Rafting em Cuiabá" src="https://www.google.com/maps?q=Cuiab%C3%A1%20MT&output=embed" loading="lazy"></iframe>
+        </div>
+
+        <form action="https://formspree.io/f/mayzqvqa" method="post">
+          <h2>Envie sua mensagem</h2>
+          <label for="nome">Seu nome<input id="nome" name="nome" type="text" autocomplete="name" required></label>
+          <label for="email">Seu e-mail<input id="email" name="email" type="email" autocomplete="email" required></label>
+          <fieldset>
+            <legend>Finalidade da mensagem</legend>
+            <label><input name="finalidade" type="radio" value="consulta-geral" required> Consulta Geral</label>
+            <label><input name="finalidade" type="radio" value="pergunta-reserva"> Pergunta sobre Reserva</label>
+            <label><input name="finalidade" type="radio" value="sugestao-site"> Sugestão de Site</label>
+          </fieldset>
+          <label for="mensagem">Mensagem<textarea id="mensagem" name="mensagem" rows="5" required></textarea></label>
+          <label class="checkbox-label"><input name="newsletter" type="checkbox" value="sim"> Quero receber a newsletter mensal</label>
+          <button class="button button-dark" type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+
+      <section class="staff-section">
+        <p class="eyebrow">Quem responde você</p>
+        <h2>Nossa equipe está pronta</h2>
+        <div class="staff-grid">
+          <figure><img src="imagens/funcionaria-1.svg" alt="Marina Alves, guia de rafting"><figcaption><strong>Marina Alves</strong><span>Guia de rafting</span></figcaption></figure>
+          <figure><img src="imagens/funcionaria-2.svg" alt="Lúcia Prado, atendimento ao cliente"><figcaption><strong>Lúcia Prado</strong><span>Atendimento ao cliente</span></figcaption></figure>
+          <figure><img src="imagens/funcionario-3.svg" alt="Caio Nunes, coordenador de expedições"><figcaption><strong>Caio Nunes</strong><span>Coordenador de expedições</span></figcaption></figure>
+        </div>
       </section>
     </main>
 
