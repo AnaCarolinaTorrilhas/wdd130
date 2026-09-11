@@ -1,7 +1,7 @@
 :root {
   --primaria: #073b4c;
   --secundaria: #118ab2;
-  --destaque: #a63d16;
+  --destaque: #96330f;
   --amarelo: #ffd166;
   --papel: #f7fbfc;
   --branco: #fff;
@@ -35,6 +35,7 @@ header {
   align-items: center;
   background: var(--primaria);
   border-bottom: 4px solid var(--amarelo);
+  color: var(--branco);
   display: grid;
   gap: 2rem;
   grid-template-columns: 120px 1fr;
@@ -80,14 +81,6 @@ h2 {
   text-align: center;
 }
 
-h1 {
-  font-size: clamp(2rem, 6vw, 3.5rem);
-}
-
-h2 {
-  font-size: 2rem;
-}
-
 p,
 section,
 article,
@@ -117,7 +110,6 @@ nav {
 }
 
 .hero article {
-  align-items: center;
   background: rgb(255 255 255 / 0.92);
   bottom: 1.25rem;
   display: flex;
@@ -167,8 +159,6 @@ nav {
 
 .aventura figcaption {
   color: var(--primaria);
-  font-size: 0.8rem;
-  font-weight: bold;
   padding-top: 0.5rem;
 }
 
@@ -220,16 +210,10 @@ footer p {
   text-align: left;
 }
 
-.home-hero p:not(.eyebrow) {
-  font-size: 1.1rem;
-  margin: 0 0 1.25rem;
-}
-
 .eyebrow {
   color: var(--destaque);
   font-size: 0.78rem;
   font-weight: bold;
-  letter-spacing: 0.12em;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -244,7 +228,6 @@ footer p {
   border: 0;
   border-radius: 4px;
   color: var(--branco);
-  cursor: pointer;
   display: inline-block;
   font: inherit;
   font-weight: bold;
@@ -282,7 +265,6 @@ footer p {
 }
 
 .stat-list {
-  border-left: 4px solid var(--amarelo);
   display: grid;
   gap: 1rem;
   padding: 0 1rem;
@@ -296,8 +278,6 @@ footer p {
 
 .stat-list strong {
   color: var(--destaque);
-  font-family: var(--titulo);
-  font-size: 2rem;
 }
 
 .mini-grid,
@@ -335,7 +315,6 @@ footer p {
 
 .feature-card a {
   color: var(--primaria);
-  display: inline-block;
   font-weight: bold;
   margin-top: 1rem;
 }
@@ -353,7 +332,6 @@ footer p {
 
 .cta-section p {
   margin: 0 auto 1rem;
-  max-width: 38rem;
 }
 
 .page-intro {
@@ -370,7 +348,6 @@ footer p {
 
 .page-intro p:last-child {
   margin: 0 auto;
-  max-width: 42rem;
 }
 
 .tour-card {
@@ -385,9 +362,7 @@ footer p {
 
 .tour-top span {
   color: var(--destaque);
-  font-size: 0.78rem;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .tour-card ul {
@@ -400,13 +375,11 @@ footer p {
 .tour-card li::before {
   color: var(--destaque);
   content: "✓";
-  font-weight: bold;
   margin-right: 0.5rem;
 }
 
 .tour-card .button {
   margin-top: auto;
-  text-align: center;
 }
 
 .safety-strip {
@@ -422,7 +395,6 @@ footer p {
 
 .safety-strip p {
   margin: 0 auto;
-  max-width: 42rem;
 }
 
 .contact-layout {
@@ -454,13 +426,8 @@ dl div {
 
 dt {
   color: var(--destaque);
-  font-size: 0.78rem;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-dd {
-  margin: 0;
 }
 
 form {
@@ -486,10 +453,6 @@ textarea {
   width: 100%;
 }
 
-textarea {
-  resize: vertical;
-}
-
 fieldset {
   border: 0;
   margin-bottom: 1rem;
@@ -497,7 +460,6 @@ fieldset {
 
 legend {
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
 fieldset label,
@@ -505,29 +467,23 @@ fieldset label,
   align-items: center;
   display: flex;
   font-weight: normal;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 fieldset input,
 .checkbox-label input {
   accent-color: var(--destaque);
-  margin: 0;
   width: auto;
 }
 
 .staff-section {
   background: var(--branco);
-  margin: 2rem 0;
   padding: 2rem;
   text-align: center;
 }
 
 .staff-grid {
   display: grid;
-  gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 1.5rem;
 }
 
 .staff-grid figure {
@@ -537,18 +493,15 @@ fieldset input,
 .staff-grid img {
   border-radius: 50%;
   display: block;
-  margin: 0 auto 0.75rem;
   width: 120px;
 }
 
 .staff-grid figcaption {
   display: grid;
-  gap: 0.15rem;
 }
 
 .staff-grid figcaption span {
   color: var(--destaque);
-  font-size: 0.85rem;
 }
 
 @media (max-width: 650px) {

@@ -41,12 +41,12 @@
           <label for="email">Seu e-mail<input id="email" name="email" type="email" autocomplete="email" required></label>
           <fieldset>
             <legend>Finalidade da mensagem</legend>
-            <label><input name="finalidade" type="radio" value="consulta-geral" required> Consulta Geral</label>
-            <label><input name="finalidade" type="radio" value="pergunta-reserva"> Pergunta sobre Reserva</label>
-            <label><input name="finalidade" type="radio" value="sugestao-site"> Sugestão de Site</label>
+            <label><input id="consulta-geral" name="finalidade" type="radio" value="consulta-geral" required> Consulta Geral</label>
+            <label><input id="pergunta-reserva" name="finalidade" type="radio" value="pergunta-reserva"> Pergunta sobre Reserva</label>
+            <label><input id="sugestao-site" name="finalidade" type="radio" value="sugestao-site"> Sugestão de Site</label>
           </fieldset>
           <label for="mensagem">Mensagem<textarea id="mensagem" name="mensagem" rows="5" required></textarea></label>
-          <label class="checkbox-label"><input name="newsletter" type="checkbox" value="sim"> Quero receber a newsletter mensal</label>
+          <label class="checkbox-label"><input id="newsletter" name="newsletter" type="checkbox" value="sim"> Quero receber a newsletter mensal</label>
           <button class="button button-dark" type="submit">Enviar mensagem</button>
         </form>
       </section>
